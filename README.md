@@ -42,7 +42,7 @@ Biblioteca Networkx (pip install networkx)
 
 # Funcionamento interno
 * hierarquia do objetos
-<img width="8954" height="1458" alt="grafo" src="https://github.com/user-attachments/assets/e4e75cba-dce0-4153-a473-f833c3269960" />
+<img width="8954" height="1458" alt="grafo" src="https://github.com/user-attachments/assets/7a4110e1-e1c4-451b-b12a-7b3b327183b8" />
 
 
 
