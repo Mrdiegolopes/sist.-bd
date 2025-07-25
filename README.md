@@ -25,7 +25,7 @@ Fase de Encolhimento: após liberar um lock, não pode mais adquirir novos.
  - tabela
  - pagina
  - tupla
- Bloqueios aplicados em um nível afetam os objetos ascendentes e descendentes na hierarquia.
+
 
 ## Funcionalidades por arquivo
 2V2PL/
