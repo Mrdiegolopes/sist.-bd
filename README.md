@@ -46,20 +46,6 @@ Biblioteca Networkx (pip install networkx)
 
 
 
-# Fluxo de protocolo
-- Parser converte schedule em operações #
-
-- Protocolo tenta adquirir bloqueios
-
-em caso de conflito:
-
-- Adiciona aresta no grafo de espera
-
-- Verifica ciclos (deadlock)
-
-- Se deadlock detectado, aborta transação mais recente
-
-- Commit converte bloqueios para Certify Locks
 
 # Tipos de bloqueio 
 |Bloqueio	| Descrição | Nivel |
@@ -67,36 +53,12 @@ em caso de conflito:
 | RL	| Read Lock | Objeto |
 | WL |	Write Lock | Objeto |
 | UL |	Update Lock | Objeto |
-| CL |	Certify Lock | Objeto |
-| IRL |	Intention Read Lock | hierarquico |
-|IWL |	Intention Write Lock | hierarquico |
+| CL |	Certificado Lock | Objeto |
+| IRL |	intencional Read Lock| hierarquico |
+|IWL |	Intencional Write Lock | hierarquico |
 
-# Saida do Sistema
 
-- Objetos disponíveis no esquema: ['BD', 'AA1', 'AA2', 'TB1', 'TB2', 'TB3', 'TB4', 'PG1', 'PG2', 'PG3', 'PG4', 'PG5', 'PG6', 'PG7', 'PG8', 'TP1', 'TP2', 'TP3', 'TP4', 'TP5', 'TP6', 'TP7', 'TP8', 'TP9', 'TP10', 'TP11', 'TP12', 'TP13', 'TP14', 'TP15', 'TP16']
 
-- Digite o schedule:
-
-caso for correto
-Schedule correto
-
-caso não o escalonamento se meter em um deadlock
-Por exemplo
-
- Aresta adicionada: T2 -> T1
-
- Grafo de espera:
-    T2 -> T1
-
- Aresta adicionada: T1 -> T2
-
- Grafo de espera:
-    T1 -> T2
-    T2 -> T1
-
- Deadlock detectado! Abortar...
-
- Resultado: T2 se meteu num deadlock e foi abortada!
 
 # Autores
 - Diego Lopes, UFC (Universidade Federal do Ceará) @Mrdiegolopes 
